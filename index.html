@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!-- Button trigger modal -->
+<div class="btn-wrapper">
+<button type="button" class="btn btn-show " data-bs-toggle="modal" data-bs-target="#MyModal">
+ Конфигуратор
+</button>
+</div>
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="MyModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Выберите комплектацию</h5><button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="modal-wrapper active">
+            <ul class="modal-list modal-list_name"></ul>
+          </div>
+
+          <div class="modal-wrapper">
+            <ul class="modal-list modal-list_rangefinder"></ul>
+          </div>
+
+          <div class="modal-wrapper">
+            <ul class="modal-list modal-list_correctness"></ul>
+          </div>
+
+          <div class="modal-wrapper modal-wrapper-table">
+            <div class="modal-modify">
+            </div>
+            <table class="table table-striped">
+              <thead>
+                <tr class="table-success">
+                  <th scope="col">Название</th>
+                  <th scope="col">Цена</th>
+                  <th scope="col">Кол-во</th>
+                  <th scope="col">Сумма</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <div class="modal-wrapper modal-wrapper-mail">
+            <form action="">
+            <div class="modal-mail">
+              <div class="modal-mail_li"><p>Имя</p><input  type="text"></div>
+              <div class="modal-mail_li"><p>Email</p><input  type="email"></div>
+              <div class="modal-mail_li"><p>Телефон</p><input  type="tel"></div>
+              <div class="modal-mail_li"><p>Компания</p><input  type="text"></div>
+              <button class="btn modal-mail-btn"  type="submit">Отправить</button>
+            </div>
+          </form>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <div class="table-sum"></div><button class="btn btn-primary modal-table_btn"  type="button">Далее</button>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
