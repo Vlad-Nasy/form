@@ -1,0 +1,456 @@
+{
+  "device": [
+    {
+      "name": "TS03",
+      "img" : "TS03.png",
+      "modify": [
+        {
+          "name": "EGL",
+          "price": "100"
+        },
+        {
+          "name": "AutoHeight",
+          "price": "200"
+        }
+      ],
+      "rangefinder": [
+        {
+          "name": "R100",
+          "parameters": [
+            {
+              "correctness": "1''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "2''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "3''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "R1000",
+          "parameters": [
+            {
+              "correctness": "1''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "2''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "3''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TS07",      
+      "img" : "TS07.png",
+      "modify": [
+        {
+          "name": "EGL",
+          "price": "100"
+        },
+        {
+          "name": "AutoHeight",
+          "price": "200"
+        }
+      ],
+      "rangefinder": [
+        {
+          "name": "R100",
+          "parameters": [
+            {
+              "correctness": "1''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "2''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "3''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "R1000",
+          "parameters": [
+            {
+              "correctness": "1''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "2''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "3''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TS10",      
+      "img" : "TS10.png",
+      "modify": [
+        {
+          "name": "EGL",
+          "price": "100"
+        },
+        {
+          "name": "AutoHeight",
+          "price": "200"
+        }
+      ],
+      "rangefinder": [
+        {
+          "name": "R100",
+          "parameters": [
+            {
+              "correctness": "1''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "2''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "3''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "R1000",
+          "parameters": [
+            {
+              "correctness": "1''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "2''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }
+              ]
+            },
+            {
+              "correctness": "3''",
+              "price": "100",
+              "equipment": [
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                },
+                {
+                  "name": "Аккумулятор GEB361 (11.1V /5.6 Ah ч, Li-Ion)",
+                  "price": "30600",
+                  "count": "1"
+                }]
+            }]
+        }]
+    }]
+}

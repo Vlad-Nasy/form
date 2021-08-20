@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!-- Button trigger modal -->
+<div class="btn-wrapper">
+<button type="button" class="btn btn-show " data-bs-toggle="modal" data-bs-target="#MyModal">
+ Конфигуратор
+</button>
+</div>
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="MyModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Выберите комплектацию</h5><button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="modal-wrapper active">
+            <ul class="modal-list modal-list_name"></ul>
+          </div>
+
+          <div class="modal-wrapper">
+            <ul class="modal-list modal-list_rangefinder"></ul>
+          </div>
+
+          <div class="modal-wrapper">
+            <ul class="modal-list modal-list_correctness"></ul>
+          </div>
+
+          <div class="modal-wrapper modal-wrapper-table">
+            <div class="modal-modify">
+            </div>
+            <table class="table table-striped">
+              <thead>
+                <tr class="table-success">
+                  <th scope="col">Название</th>
+                  <th scope="col">Цена</th>
+                  <th scope="col">Кол-во</th>
+                  <th scope="col">Сумма</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <div class="modal-wrapper modal-wrapper-mail">
+            <form action="">
+            <div class="modal-mail">
+              <div class="modal-mail_li"><p>Имя</p><input  type="text"></div>
+              <div class="modal-mail_li"><p>Email</p><input  type="email"></div>
+              <div class="modal-mail_li"><p>Телефон</p><input  type="tel"></div>
+              <div class="modal-mail_li"><p>Компания</p><input  type="text"></div>
+              <button class="btn modal-mail-btn"  type="submit">Отправить</button>
+            </div>
+          </form>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <div class="table-sum"></div><button class="btn btn-primary modal-table_btn"  type="button">Далее</button>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+<script>
+$(document).ready(function() {
+  $(document).on('click', '.modal-li', function() {
+    $(this).closest(".modal-wrapper").removeClass("active");
+    $(this).closest(".modal-wrapper").next().addClass("active");
+  })
+  var index;
+  var data = (function() {
+    var json = null;
+    $.ajax({
+      'async': false,
+      'global': false,
+      'url': "mydata.json",
+      'dataType': "json",
+      'success': function(data) {
+        json = data;
+      }
+    });
+    return json;
+  })();
+  for (var i = 0; i < data.device.length; ++i) {
+    $(".modal-list_name").append("<div class='modal-li modal-list-name_li' index='" + i + "'><img src='" + data.device[i].img + "' ><div class='modal-list-name_text'> " + data.device[i].name + "</div></div>");
+  }
+  $(document).on('click', '.modal-list-name_li', function() {
+    window.data_divice = data.device[$(this).attr('index')];
+    $(".modal-list_rangefinder").html("");
+    for (var i = 0; i < window.data_divice.rangefinder.length; ++i) {
+      $(".modal-list_rangefinder").append("<li class='modal-li modal-li_btn-2' index1='" + i + "'>" + window.data_divice.rangefinder[i].name + "</li>")
+    }
+  })
+  $(document).on('click', '.modal-list_rangefinder > .modal-li', function() {
+    window.data_rangefinder = window.data_divice.rangefinder[$(this).attr('index1')]
+    $(".modal-list_correctness").html("");
+    for (var i = 0; i < window.data_rangefinder.parameters.length; ++i) {
+      $(".modal-list_correctness").append("<li class='modal-li modal-li_btn'  index2='" + i + "'>" + window.data_rangefinder.parameters[i].correctness + "</li>")
+    }
+  })
+  $(document).on('click', '.modal-list_correctness > .modal-li', function() {
+    $(".modal-footer").addClass("active");
+    var index2 = $(this).attr('index2');
+    window.data_parameters = window.data_rangefinder.parameters[$(this).attr('index2')];
+    $("tbody").html("");
+    $(".modal-modify").html("");
+    for (var i = 0; i < window.data_divice.modify.length; ++i) {
+      $(".modal-modify").append("<label><input type='checkbox' name='1' class='modal-modify_input' value='" + window.data_divice.modify[i].price + "'><div>" + window.data_divice.modify[i].name + "</div></label>");
+    };
+    for (var i = 0; i < window.data_parameters.equipment.length; ++i) {
+      var sum = parseInt(data_parameters.equipment[i].price) * parseInt(window.data_parameters.equipment[i].count);
+      $("tbody").append("<tr><td>" + window.data_parameters.equipment[i].name + "</td><td class='table-price'>" + window.data_parameters.equipment[i].price + "</td><td><input type='number' min='0' value='" + data_parameters.equipment[i].count + "' class='table-input'></td><td class='table-item-price'>" + sum + "</td></tr> ")
+    };
+    sum_count();
+  });
+  $(document).on('change', '.table-input', function() {
+    var price = $(this).closest('td').prev().text();
+    var value = $(this).val();
+    $(this).closest('td').next().text(price * value);
+    sum_count();
+  });
+  $(document).on('change', '.modal-modify_input', function() {
+     $('input[type="checkbox"]').not(this).prop('checked', false);
+    sum_count();
+  })
+
+  function sum_count() {
+    if (parseInt($(".modal-modify_input:checked").val()) > 0){
+      var modify = parseInt($(".modal-modify_input:checked").val());
+    }else{
+      var modify = 0;
+    };
+
+    if ( parseInt(window.data_parameters.price) + modify > 0) {
+      var sum = parseInt(window.data_parameters.price) + modify;
+    }else{
+      var sum = 0;
+    }
+
+    $('.table-item-price').each(function() {
+      sum += parseInt($(this).text())
+    })
+    $('.table-sum').text("Общая сумма: " + sum);
+  };
+  // sum_count();
+  $(".modal-table_btn").on('click', function() {
+    $(".modal-wrapper-table.active").removeClass("active");
+    $(".modal-wrapper-mail").addClass("active");
+    $(".modal-footer").removeClass("active");
+  });
+});
+</script>
+</html>
